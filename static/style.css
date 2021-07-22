@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+:root {
+    --font-primary: "Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-headline: 'Nunito', sans-serif;
+    --font-monospace: "Menlo","Consolas","Monaco",monospace;
+    --discord-blurple: #5865F2;
+    --discord-green: #57F287;
+    --discord-yellow: #FEE75C;
+    --discord-fuchsia: #EB459E;
+    --discord-red: #ED4245;
+    --discord-red-darker: #D42629;
+    --tophat-gray:#31373d;
+    --tophat-red: #f65e74;
+}
+html {background: #198fe4;color:white;font-family: var(--font-headline)}
+h1, h2, h3, h4, h5, h6, p {margin:0}
+h3 {color: #D5D5D5}
+.main {
+  background:var(--tophat-gray);
+  border-radius:45px 45px 0px 0px;
+  width:90%;
+  max-width:550px;
+  margin:auto;
+  margin-top:25px;
+  padding:20px;
+  padding-bottom:50px;
+}
+.stripe {
+  background:var(--tophat-red);
+  width:90%;
+  max-width:550px;
+  margin:auto;
+  padding:20px;
+  height:30px;
+  border-radius:0px 0px 25px 25px;
+}
+.brim {
+  background:var(--tophat-gray);
+  width:90%;
+  max-width:800px;
+  border-radius: 50%;
+  margin:auto;
+  margin-top:-60px;
+  padding:20px;
+  height:80px;
+  z-index:-1;
+  position:relative;
+}
+.main>h1{font-size:2.4em;text-align:center;}
+a {color:white;text-decoration:none}
+h1>a, h2>a, h3>a, h4>a, h4>a, p>a {color: var(--tophat-red)}
+h1>a:hover, h2>a:hover, h3>a:hover, h4>a:hover, h4>a:hover, p>a:hover {text-decoration: underline;}
+.game {border-radius:25px;background:#66757F;padding:20px;margin-top:10px;margin-bottom:10px;transition:transform 0.1s}
+.game>img {height:30px;display:inline;margin-right:10px;margin-bottom:-6px}
+.game>h2 {display:inline}
+.game:hover {transform:translateY(2px);transition:0.1s}
+.game:active {transform:translateY(3px);transition:0.1s}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+:root {
+    --font-primary: "Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+    --font-headline: 'Nunito', sans-serif;
+    --font-monospace: "Menlo","Consolas","Monaco",monospace;
+    --discord-blurple: #5865F2;
+    --discord-green: #57F287;
+    --discord-yellow: #FEE75C;
+    --discord-fuchsia: #EB459E;
+    --discord-red: #ED4245;
+    --discord-red-darker: #D42629;
+}
+head, body {font-family: var(--font-primary);margin: 0;color: black;background-color:white}
+a {text-decoration: none;color: var(--discord-blurple)}
+a:hover {text-decoration: underline}
+navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--discord-red);
+    text-align: right;
+    height: 60px;
+    font-family: var(--font-headline);
+}
+.navbar-item {
+    display: inline-block;
+    height: 100%;
+}
+.navbar-item>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 40px;
+    vertical-align: middle;
+}
+.navbar-item>a:hover {
+    border-bottom: 4px var(--discord-yellow) solid;
+    padding-top: 6px;
+    padding-bottom: 2px;
+}
+.hero-banner {
+    width: 100%;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {font-family: var(--font-headline)}
+h1 {font-size: 2.5em;margin-bottom: 10px}
+h2 {font-size: 2em;margin-bottom: 10px}
+h6 {margin: 3px}
+.center {text-align: center}
+.image-footer {
+    margin: 0;
+    margin-left: 5px;
+    color: gray;
+    position: absolute;
+    z-index: -1;
+}
+p {
+    margin: 0;
+}
+span.registered {
+    font-size: 0.5em;
+    vertical-align: top;
+}
+.content {
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.long {
+    background-color: #f7f7f7;
+    padding: 15px 0px 15px 0px
+}
+button {
+    cursor: pointer;
+    background-color: var(--discord-red);
+    border: none;
+    border-radius: 50px 50px 50px 0px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    font-family: var(--font-headline);
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: var(--discord-red-darker)
+}
+.hover-me {
+    color: var(--discord-fuchsia); cursor: help;
+}
